@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Eventos Nosotros</name>
+    <events>
+        <event-block sid="16053631515112">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="8041422783050664" type="Mouse">
+                    <param id="0" name="Object">Boton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="9818937544929939" type="Boton">
+                    <param id="0" name="Animation">&quot;hover&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="272756690370679">
+            <conditions>
+                <condition id="-22" name="Else" sid="2055283828649263" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7685664621327544" type="Boton">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1120326861408959">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="68971539505999" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Boton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="6095085029523535" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9079437551400047">
+            <conditions>
+                <condition id="3" name="On touched object" sid="4724736120116372" type="Touch">
+                    <param id="0" name="Object">Boton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="5991885398345671" type="System">
+                    <param id="0" name="Layout">Menu</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

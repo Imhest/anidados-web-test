@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Enemigos</name>
+    <events>
+        <event-block sid="8449507897951894">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="1621847832645771" type="System">
+                    <param id="0" name="Interval (seconds)">1.7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="7141304680382143" type="generador1">
+                    <param id="0" name="Object">Enemigo3</param>
+                    <param id="1" name="Layer">7</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="7852872238998826" type="Enemigo3">
+                    <param id="0" name="Angle">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7461410962911786">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="4502716380226355" type="System">
+                    <param id="0" name="Interval (seconds)">1.8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="7805902709875992" type="generador2">
+                    <param id="0" name="Object">Enemigo7</param>
+                    <param id="1" name="Layer">7</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="258384382777687" type="Enemigo7">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3102545179126514">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="7459033652043422" type="System">
+                    <param id="0" name="Interval (seconds)">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="1157573585769567" type="generador3">
+                    <param id="0" name="Object">Enemigo</param>
+                    <param id="1" name="Layer">7</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="285488931016305" type="Enemigo">
+                    <param id="0" name="Angle">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1121018391707295">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="2326433534338614" type="System">
+                    <param id="0" name="Interval (seconds)">1.6</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="4503890551172438" type="generador4">
+                    <param id="0" name="Object">Enemigo2</param>
+                    <param id="1" name="Layer">7</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="4402445221107765" type="Enemigo2">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6263081884009734">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="4844394478368632" type="System">
+                    <param id="0" name="Interval (seconds)">2.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="3402604851405449" type="generador5">
+                    <param id="0" name="Object">Enemigo4</param>
+                    <param id="1" name="Layer">7</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="7413396176862498" type="Enemigo4">
+                    <param id="0" name="Angle">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1083967828521736">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="9618898605053764" type="System">
+                    <param id="0" name="Interval (seconds)">2.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="8874576113104042" type="generador6">
+                    <param id="0" name="Object">Enemigo5</param>
+                    <param id="1" name="Layer">7</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="3753277775606365" type="Enemigo5">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7575821081442565">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="2883217127724067" type="System">
+                    <param id="0" name="Interval (seconds)">2.5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="5519548107766293" type="generador7">
+                    <param id="0" name="Object">Enemigo6</param>
+                    <param id="1" name="Layer">7</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="1807924653962195" type="Enemigo6">
+                    <param id="0" name="Angle">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6113291213609786">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="8907997350206235" type="System">
+                    <param id="0" name="Interval (seconds)">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="7817154285287045" type="generador8">
+                    <param id="0" name="Object">Enemigo8</param>
+                    <param id="1" name="Layer">7</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="7577436868902659" type="Enemigo8">
+                    <param id="0" name="Angle">180</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1974505015649588">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6988470979233314" type="Enemigos">
+                    <param id="0" name="Object">Dani</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="996382446386735" type="Dani" />
+                <action id="-3" name="Create object" sid="5016016868306764" type="System">
+                    <param id="0" name="Object to create">Dani</param>
+                    <param id="1" name="Layer">9</param>
+                    <param id="2" name="X">374</param>
+                    <param id="3" name="Y">21453</param>
+                </action>
+                <action id="-15" name="Set visible" sid="34706017285287" type="Monedas">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="7397558173313708" type="Monedas">
+                    <param id="0" name="Collisions">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="2366814997800426" type="System">
+                    <param id="0" name="Variable">puntos</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5750340155494722">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="3293637210268941" type="Enemigos2">
+                    <param id="0" name="Object">Dani</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="9673150357635442" type="Dani" />
+                <action id="-3" name="Create object" sid="8912910418527198" type="System">
+                    <param id="0" name="Object to create">Dani</param>
+                    <param id="1" name="Layer">9</param>
+                    <param id="2" name="X">357</param>
+                    <param id="3" name="Y">17650</param>
+                </action>
+                <action id="4" name="Set animation" sid="221210070874902" type="Dani">
+                    <param id="0" name="Animation">&quot;Lucas&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="5039162282240909" type="Monedas">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="4758424726244947" type="Monedas">
+                    <param id="0" name="Collisions">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="3273146263676495" type="System">
+                    <param id="0" name="Variable">puntos</param>
+                    <param id="1" name="Value">puntoscheck1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2434912942948524">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1126074948294691" type="Enemigos3">
+                    <param id="0" name="Object">Dani</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="9277719302515726" type="Dani" />
+                <action id="-3" name="Create object" sid="6038575650782328" type="System">
+                    <param id="0" name="Object to create">Dani</param>
+                    <param id="1" name="Layer">9</param>
+                    <param id="2" name="X">400</param>
+                    <param id="3" name="Y">14041</param>
+                </action>
+                <action id="4" name="Set animation" sid="3302475974689891" type="Dani">
+                    <param id="0" name="Animation">&quot;Carla&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="813651851680433" type="Monedas">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="5350063171133429" type="Monedas">
+                    <param id="0" name="Collisions">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="8086266301010979" type="System">
+                    <param id="0" name="Variable">puntos</param>
+                    <param id="1" name="Value">puntoscheck2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9143493709299136">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7465680121998695" type="Enemigos4">
+                    <param id="0" name="Object">Dani</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="4016877861395539" type="Dani" />
+                <action id="-3" name="Create object" sid="3403359828249762" type="System">
+                    <param id="0" name="Object to create">Dani</param>
+                    <param id="1" name="Layer">9</param>
+                    <param id="2" name="X">374</param>
+                    <param id="3" name="Y">6731</param>
+                </action>
+                <action id="4" name="Set animation" sid="3403616656447621" type="Dani">
+                    <param id="0" name="Animation">&quot;Ivo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-15" name="Set visible" sid="6002346883835905" type="Monedas">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="6653066959970428" type="Monedas">
+                    <param id="0" name="Collisions">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="7081082446847437" type="System">
+                    <param id="0" name="Variable">puntos</param>
+                    <param id="1" name="Value">puntoscheck3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6172573115868206">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="8140356828421677" type="Mouse">
+                    <param id="0" name="Object">FlechaIzquierda</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="1208260240214655" type="Dani">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2760596756041815">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="8395857035650626" type="Mouse">
+                    <param id="0" name="Object">FlechaDerecha</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="9755663069756146" type="Dani">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="7832482600267267">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="3292262896786338" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">close</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Close" sid="7276956133957593" type="Browser" />
+            </actions>
+        </event-block>
+        <event-block sid="3639908239974853">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="7107842903908782" type="Touch">
+                    <param id="0" name="Object">FlechaIzquierda</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="3829818078533662" type="Dani">
+                    <param id="0" name="Control">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1946799468909091">
+            <conditions>
+                <condition id="4" name="Is touching object" sid="6279955545322077" type="Touch">
+                    <param id="0" name="Object">FlechaDerecha</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="4658465953672595" type="Dani">
+                    <param id="0" name="Control">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1229119683729169">
+            <conditions>
+                <condition id="3" name="On touched object" sid="5635104379710542" type="Touch">
+                    <param id="0" name="Object">close</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="1" name="Close" sid="70108543278711" type="Browser" />
+            </actions>
+        </event-block>
+        <event-block sid="1742688675520295">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="271102416126286" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9770138166832941" type="Audio">
+                    <param id="0" name="Audio file">fondoamigo</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">-10</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1177646061192546">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="452851459094684" type="Monedas">
+                    <param id="0" name="Object">Dani</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="9169734942286745" type="Audio">
+                    <param id="0" name="Audio file">moneda2</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">-6</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Personajes</name>
+    <events>
+        <variable constant="0" name="puntoscheck3" sid="4751509436398244" static="0" type="number">0</variable>
+        <variable constant="0" name="puntoscheck2" sid="8257145310361211" static="0" type="number">0</variable>
+        <variable constant="0" name="puntoscheck1" sid="3660125844357432" static="0" type="number">0</variable>
+        <variable constant="0" name="puntos" sid="2216279293192697" static="0" type="number">0</variable>
+        <include>Enemigos</include>
+        <include>Plataformas</include>
+        <event-block sid="4802038598680496">
+            <conditions>
+                <condition behavior="Platform" id="2" name="Is on floor" sid="296784349000433" type="Dani" />
+            </conditions>
+            <actions>
+                <action behavior="Platform" id="7" name="Simulate control" sid="4587924918610667" type="Dani">
+                    <param id="0" name="Control">2</param>
+                </action>
+                <action id="3" name="Start" sid="4860293413613613" type="Dani">
+                    <param id="0" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="514303541452304">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="1724499805051579" type="finallvl">
+                    <param id="0" name="Object">Dani</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1571392967865036" type="Dani">
+                    <param id="0" name="Animation">&quot;Lucas&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="3587268350850317" type="System">
+                    <param id="0" name="Variable">puntoscheck1</param>
+                    <param id="1" name="Value">puntos</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8808586262986681">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="2755300258630754" type="finallvl2">
+                    <param id="0" name="Object">Dani</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7549645028384719" type="Dani">
+                    <param id="0" name="Animation">&quot;Carla&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="9374050899786115" type="System">
+                    <param id="0" name="Variable">puntoscheck2</param>
+                    <param id="1" name="Value">puntos</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6245338959160434">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="5359513006506299" type="finallvl3">
+                    <param id="0" name="Object">Dani</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7611785597846985" type="Dani">
+                    <param id="0" name="Animation">&quot;Ivo&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="258333397279318" type="System">
+                    <param id="0" name="Variable">puntoscheck3</param>
+                    <param id="1" name="Value">puntos</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="61491328636073">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="6565703332115736" type="finallvl4">
+                    <param id="0" name="Object">Dani</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="6181021498701487" type="Sprite9">
+                    <param id="0" name="Fade-in time">0</param>
+                </action>
+                <action behavior="Fade" id="4" name="Set fade-out time" sid="5110432399592998" type="Sprite9">
+                    <param id="0" name="Fade-out time">1</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="9867100695503069" type="System">
+                    <param id="0" name="Layout">Final</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4094532531306827">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="8696560203148998" type="Dani">
+                    <param id="0" name="Object">Monedas</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="6473618416026425" type="System">
+                    <param id="0" name="Variable">puntos</param>
+                    <param id="1" name="Value">10</param>
+                </action>
+                <action id="-15" name="Set visible" sid="2887962685457671" type="Monedas">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+                <action id="11" name="Set collisions enabled" sid="8883709482265694" type="Monedas">
+                    <param id="0" name="Collisions">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2321617926860411">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="7421305617811273" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="5375340238735511" type="puntosTexto">
+                    <param id="0" name="Text">puntos</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Menuevents</name>
+    <events>
+        <event-block sid="181813094088226">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="5973904395504096" type="System" />
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="1514237873337947" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="2177850173608099">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="9555229713707274" type="Mouse">
+                    <param id="0" name="Object">botonjugar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="4544136349199581" type="botonjugar">
+                    <param id="0" name="Animation">&quot;hover&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2190934143483041">
+            <conditions>
+                <condition id="-22" name="Else" sid="8849075514008445" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8837604686249788" type="botonjugar">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="6672759015464392">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="2930891331142953" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">botonjugar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="6706038303591581" type="Sprite10">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
+                <action behavior="Fade" id="4" name="Set fade-out time" sid="8703627049334109" type="Sprite10">
+                    <param id="0" name="Fade-out time">0</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="7427618282410139" type="Sprite10" />
+                <action id="-16" name="Wait" sid="5786478616647267" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="9099058638660374" type="System">
+                    <param id="0" name="Layout">Juego</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8627641156976471">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="2333070316834472" type="Mouse">
+                    <param id="0" name="Object">botoninstrucciones</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="7171305545347277" type="botoninstrucciones">
+                    <param id="0" name="Animation">&quot;hover&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1581839672005671">
+            <conditions>
+                <condition id="-22" name="Else" sid="3605047854056525" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="5802838786205528" type="botoninstrucciones">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3100387218979248">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="1876137887217297" type="Mouse">
+                    <param id="0" name="Object">botonnosotros</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="8031358885942002" type="botonnosotros">
+                    <param id="0" name="Animation">&quot;hover&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8348889280575345">
+            <conditions>
+                <condition id="-22" name="Else" sid="3043485890927046" type="System" />
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="1122514332926571" type="botonnosotros">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2174276312984946">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="4838340833980072" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">botoninstrucciones</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="2681453700687906" type="System">
+                    <param id="0" name="Layout">Instrucciones</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5129784549035677">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="3909316627941561" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">botonnosotros</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="7711131765096926" type="System">
+                    <param id="0" name="Layout">Nosotros</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="856109135144941">
+            <conditions>
+                <condition id="3" name="On touched object" sid="2541330436580067" type="Touch">
+                    <param id="0" name="Object">botonjugar</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Fade" id="2" name="Set fade-in time" sid="662631096555389" type="Sprite10">
+                    <param id="0" name="Fade-in time">1</param>
+                </action>
+                <action behavior="Fade" id="4" name="Set fade-out time" sid="6321845898747591" type="Sprite10">
+                    <param id="0" name="Fade-out time">0</param>
+                </action>
+                <action behavior="Fade" id="1" name="Start fade" sid="6922357182264554" type="Sprite10" />
+                <action id="-16" name="Wait" sid="3965315628344559" type="System">
+                    <param id="0" name="Seconds">2</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="8463032398246873" type="System">
+                    <param id="0" name="Layout">Juego</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8089242721202802">
+            <conditions>
+                <condition id="3" name="On touched object" sid="5661520624195919" type="Touch">
+                    <param id="0" name="Object">botoninstrucciones</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3285761450697981" type="System">
+                    <param id="0" name="Layout">Instrucciones</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5245801014163401">
+            <conditions>
+                <condition id="3" name="On touched object" sid="4055827423187633" type="Touch">
+                    <param id="0" name="Object">botonnosotros</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="941717581751835" type="System">
+                    <param id="0" name="Layout">Nosotros</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

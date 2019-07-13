@@ -1,0 +1,1242 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: majalla;
+	src:url(../majalla.ttf);
+}
+
+html{
+    
+}
+
+body{
+    font-family: majalla;
+	background-image:url(../images/WrapperFondo-final2.jpg);
+	background-repeat:repeat-x;
+	background-size:cover;
+	background-position:center;
+}
+
+header{
+    -webkit-transition: opacity 0.5s ease-out 0.1s;
+    -moz-transition: opacity 0.5s ease-out 0.1s;
+    transition: opacity 0.5s ease-out 0.1s;
+    opacity:0;
+}
+
+.navegacion {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 35px;
+  background-color: rgba(0,0,0,0.7);
+  font-family: majalla;
+}
+
+.navegacion ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #FCFCFC;
+}
+
+.navegacion li{
+    height: 100%;
+    font-size: 1.5em;
+    display: inline-block;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.navegacion img{
+    height: 22px;
+    width: auto;
+    margin-bottom: -7px;
+}
+
+.dropbtn {
+    height: 100%;
+    font-family: majalla;
+    color: #FCFCFC;
+    background-color: rgba(0,0,0,0);
+    border: none;
+    font-size: 1em;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #f9f9f9;
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+#contenedor{
+	width:6600px;
+	height:auto;
+	margin-left:-10px;
+}
+
+#content-wrapper{
+
+}
+
+
+
+#nubes1{
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    background-image: url(../images/nubes1-01.png);
+    background-repeat: repeat-y repeat-x;
+    background-size: contain;
+    position: fixed;
+    z-index: -100;
+}
+
+#nubeslogoizq{
+    width: auto;
+    height: 42%;
+    position: absolute;
+    bottom: -7%;
+    left: -2%;
+    z-index: 10;
+}
+
+#nubeslogoder{
+    width: auto;
+    height: 42%;
+    position: absolute;
+    bottom: -7%;
+    right: -2%;
+    z-index: 9;
+}
+
+
+
+.pp_expand{
+    display: none !important;
+}
+
+.pp_details{
+    display: none !important;
+}
+
+
+
+
+
+#logo{
+	height:100vh;
+	width:100vw;
+    overflow: hidden;
+}
+
+#logo img{
+    display: block;
+    width: 60%;
+    height: auto;
+    margin: auto;
+    margin-top: 8%;
+}
+
+
+
+#terminacionarbol{
+	height:20vh;
+	width:100vw;
+}
+
+#ramaver{
+    width: auto;
+    height: 70%;
+    position: absolute;
+    top: -65%;
+    left: 43%;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+    z-index: -1;
+}
+
+#ramaver2{
+    width: auto;
+    height: 140%;
+    position: absolute;
+    top: 50%;
+    left: 24%;
+    z-index: -1;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+#ramaver3{
+    width: auto;
+    height: 48%;
+    position: absolute;
+    bottom: -45%;
+    left: 53%;
+    z-index: -1;
+}
+
+#ramaver4{
+    width: auto;
+    height: 60%;
+    position: absolute;
+    bottom: -45%;
+    left: 50%;
+    z-index: -1;
+}
+
+#ramaver5{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    bottom: -75%;
+    left: 24.5%;
+    z-index: -1;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+#ramaverver{
+    width: auto;
+    height: 80%;
+    position: absolute;
+    bottom: -60%;
+    left: 50%;
+    z-index: -1;
+}
+
+#ramahor{
+    width: auto;
+    height: 25%;
+    position: absolute;
+    top: 30%;
+    left: 74%;
+}
+
+
+
+
+#wrapper-div2{
+    width: 6600px;
+	height:100vh;
+    display: inline-block;
+    margin-bottom: 100vh;
+}
+
+#intro{
+	height:100%;
+	width:100vw;
+    margin-right: 26vw;
+    display: inline-block;
+    position: relative;
+}
+
+#video{
+    width: 100%;
+    height: 95%;
+    background-image:url(../images/videoholder-05.png);
+    background-repeat: no-repeat;
+	background-size:auto 100%;
+    background-position: center;
+    z-index: 2;
+    position: absolute;
+    top: 6%;
+}
+
+#video iframe{
+    width: 40vw;
+    height: 45vh;
+    max-width: 100%;
+    margin-left: 27vw;
+    margin-top: 28vh;
+}
+
+.castillos{
+    z-index: 1;
+}
+
+#castillo1{
+    width: auto;
+    height: 30%;
+    position: absolute;
+    top: 24%;
+    left: 25%;
+}
+
+#castillo2{
+    width: auto;
+    height: 50%;
+    position: absolute;
+    top: 24%;
+    left: 60%;
+}
+
+#castillo3{
+    width: auto;
+    height: 50%;
+    position: absolute;
+    bottom: -45%;
+    left: 8%;
+    z-index: 3;
+}
+
+#quienessomos{
+    height:100%;
+	width:100vw;
+    display: inline-block;
+    position: relative;
+}
+
+#quienestitulo{
+    color: #053f0f;
+    display: inline-block;
+    font:6vw arial, sans-serif;
+    line-height: 9vh;
+    position: absolute;
+    top: 18%;
+    left: 28%;
+    z-index: 5;
+}
+
+#contisla{
+    bottom: -30%;
+    left: 25%;
+}
+
+#parrafoquien{
+    color: #bbeac1;
+    display: inline-block;
+    width: 75%;
+    font:1.4em Segoe UI;
+    position: absolute;
+    top: 6%;
+    left: 14%;
+    z-index: 5;
+}
+
+#isla{
+    width: auto;
+    height: 80vh;
+    z-index: 3;
+}
+
+#verde{
+    width: auto;
+    height: 160%;
+    position: absolute;
+    right: 0;
+    top: -10%;
+    z-index: 2;
+}
+
+
+#lucas{
+    width: auto;
+    height: 60%;
+    position: absolute;
+    right: 36%;
+    top: -50%;
+    z-index: 4;
+}
+
+#islaadorno{
+    width: auto;
+    height: 80%;
+    position: absolute;
+    bottom: -55%;
+    left: -18.6%;
+    z-index: 5;
+}
+
+
+#islita{
+    width: auto;
+    height: 30%;
+    position: absolute;
+    top: 25%;
+    right: 12%;
+    z-index: -10;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+#islita2{
+    width: auto;
+    height: 50%;
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    z-index: -5;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#graficados{
+	height:150vh;
+	width:100vw;
+    position: relative;
+}
+
+.wrapper-galerias{
+    display:inline-block;
+    position: absolute;
+}
+
+#contgraficados{
+    bottom: 0;
+    left: 25%;
+}
+
+
+
+
+
+
+
+
+.submarcas{
+    width: auto;
+    height: 15%;
+    position: absolute;
+    z-index: 10;
+}
+
+
+.bajadas{
+    width: auto;
+    height: 6%;
+    position: absolute;
+    z-index: 10;
+}
+
+#islagraficados{
+    width: auto;
+    height: 150vh;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+
+
+#logograficados{
+    height: 18%;
+    left:37%;
+    top:21%;
+}
+
+#graficadosbajada{
+    left:29.5%;
+    top:41%;
+}
+
+
+
+#logomodelados{
+    height: 20%;
+    left:37%;
+    top:26%;
+}
+
+#modeladosbajada{
+    height: 7%;
+    left:29.5%;
+    top:52%;
+}
+
+
+
+#logoanimados{
+    height: 18%;
+    left:37%;
+    top:26%;
+}
+
+#animadosbajada{
+    height: 6%;
+    left:38%;
+    top:48%;
+}
+
+
+
+
+
+
+#logoprogramados{
+    height: 18%;
+    left:37%;
+    top:26%;
+}
+
+#programadosbajada{
+    height: 6%;
+    left:38%;
+    top:48%;
+}
+
+#clientesbajada{
+    height: 8%;
+    left:31%;
+    top:46%;
+}
+
+
+
+
+
+.contenedorformu{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    position: absolute;
+    top: 32%;
+    left:35%;
+    font: Segoe UI;
+    font-size: 1.5em;
+    z-index: 10;
+}
+
+.formulario{
+    
+}
+
+.paprika{
+    height: 5vh;
+    border-radius: 5px;
+    background-color: floralwhite;
+    width: 35%;
+}
+
+#submiti{
+    color: black;
+    border-radius: 5px;
+    font: Segoe UI;
+}
+
+
+
+
+
+
+.circulos{
+    width: auto;
+    height: 7.3%;
+    position: absolute;
+    z-index: 2;
+}
+
+.circulos2{
+    width: auto;
+    height: 8%;
+    position: absolute;
+    z-index: 2;
+}
+
+.circulos3{
+    width: auto;
+    height: 8.4%;
+    position: absolute;
+    z-index: 2;
+}
+
+#grafica1{
+    bottom: 1.4%;
+    left: 52.9%;
+}
+
+#grafica2{
+    bottom: 15.5%;
+    left: 52.9%;
+}
+
+#grafica3{
+    bottom: 20%;
+    left: 25.5%;
+}
+
+#grafica4{
+    bottom: 6.2%;
+    left: 38.9%;
+}
+
+#grafica5{
+    bottom: 27%;
+    left: 40.6%;
+}
+
+#grafica6{
+    bottom: 14.8%;
+    left: 67.4%;
+}
+
+#grafica7{
+    bottom: 28.6%;
+    left: 67.4%;
+}
+
+#grafica8{
+    bottom: 20.2%;
+    left: 82.8%;
+}
+
+#grafica9{
+    bottom: 40.7%;
+    left: 84.7%;
+}
+
+#grafica10{
+    bottom: 42.5%;
+    left: 70.3%;
+}
+
+#grafica11{
+    bottom: 38.9%;
+    left: 15.3%;
+}
+
+#grafica12{
+    bottom: 45.8%;
+    left: 4.8%;
+}
+
+#planetarojo{
+    width: auto;
+    height: 18%;
+    position: absolute;
+    top: -20%;
+    right: 5%;
+    z-index: 3;
+}
+
+#avionvioleta{
+    width: auto;
+    height: 6%;
+    position: absolute;
+    top: 11%;
+    right: -10%;
+    z-index: 3;
+}
+
+#avionnaranja{
+    width: auto;
+    height: 6.5%;
+    position: absolute;
+    top: 35%;
+    right: -9.5%;
+    z-index: 3;
+}
+
+#avion{
+    width: auto;
+    height: 20%;
+    position: absolute;
+    bottom: -27%;
+    left: 16%;
+    z-index: 3;
+}
+
+
+
+
+
+
+
+
+
+#wrapper-mitadgaleria{
+    width: 6600px;
+	height:100vh;
+    display: inline-block;
+    margin-top: 100vh;
+    margin-bottom: 100vh;
+}
+
+#modelados{
+    height:100%;
+	width:100vw;
+    margin-right: 26vw;
+    display: inline-block;
+    position: relative;
+}
+
+#castillomodelados{
+    width: auto;
+    height: 90%;
+    position: absolute;
+    bottom: 0%;
+    left: -3%;
+    z-index: 3;
+}
+
+#edificiomodelados{
+    width: auto;
+    height: 30%;
+    position: absolute;
+    bottom: 0%;
+    left: 6.8%;
+    z-index: 4;
+}
+
+#islamodelados{
+    width: auto;
+    height: 130vh;
+    z-index: 1;
+}
+
+#contmodelados{
+    bottom: 0;
+    left: 23%;
+}
+
+#model1{
+    bottom: 23.3%;
+    left: 19.4%;
+}
+
+#model2{
+    bottom: 18.3%;
+    left:48.4%;
+}
+
+#model3{
+    bottom: 6.2%;
+    left: 38.8%;
+}
+
+#model4{
+    bottom: 28.3%;
+    left: 70.8%;
+}
+
+#model5{
+    bottom: 47%;
+    left: 79.2%;
+}
+
+
+
+
+
+
+
+
+
+
+#animados{
+    height:100%;
+	width:100vw;
+    display: inline-block;
+    position: relative;
+}
+
+#islaverdeadorno{
+    width: auto;
+    height: 60%;
+    position: absolute;
+    top: -19%;
+    left: -25%;
+    z-index: 3;
+}
+
+#islaanimados{
+    width: auto;
+    height: 140vh;
+    z-index: 1;
+}
+
+#contanimados{
+    top: 0;
+    left: 23%;
+}
+
+#anim2{
+    bottom: 33.5%;
+    left: 19%;
+}
+#anim3{
+    bottom: 29.3%;
+    left: 1%;
+}
+#anim4{
+    bottom: 19.2%;
+    left: 11.2%;
+}
+#anim5{
+    bottom: 15.6%;
+    left: 24.3%;
+}
+#anim6{
+    bottom: 23.8%;
+    left: 41.5%;
+}
+#anim7{
+    bottom: 12%;
+    left: 50.6%;
+}
+#anim8{
+    bottom: 28.7%;
+    left: 70.6%;
+}
+#anim9{
+    bottom: 51%;
+    left: 10.8%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#programados{
+	height:100vh;
+	width:100vw;
+    position: relative;
+    margin-bottom: 135vh;
+}
+
+#islaprogramados{
+    width: auto;
+    height: 130vh;
+    z-index: 1;
+}
+
+#contprogramados{
+    top: 0;
+    left: 21%;
+}
+
+#prog1{
+    bottom: 33.3%;
+    left: 19%;
+}
+
+#prog2{
+    bottom: 17.2%;
+    left: 21.6%;
+}
+
+#prog3{
+    bottom: 2%;
+    left: 36%;
+}
+
+#prog4{
+    bottom: 15.3%;
+    left: 48.5%;
+}
+
+#prog5{
+    bottom: 29%;
+    left: 73.8%;
+}
+
+
+
+
+
+
+#clientes{
+	height:100vh;
+	width:100vw;
+    position: relative;
+    margin-bottom: 135vh;
+}
+
+#islaclientes{
+    width: auto;
+    height: 140vh;
+    z-index: 1;
+}
+
+#contclientes{
+    top: 0;
+    left: 21%;
+}
+
+#clientes1{
+    top: 0.8%;
+    left:34.5%;
+}
+
+#clientes2{
+    top: 1%;
+    left:48.3%;
+}
+
+#clientes3{
+    top: 3.4%;
+    left:59.5%;
+}
+
+#clientes4{
+    top: 12%;
+    left:34.5%;
+}
+
+#clientes5{
+    top: 10%;
+    left:45.3%;
+}
+
+#clientes6{
+    top: 18%;
+    left:53.3%;
+}
+
+#clientes7{
+    top: 21%;
+    left:29.8%;
+}
+
+#clientes8{
+    top: 24%;
+    left:41.2%;
+}
+
+#clientes9{
+    top: 29.4%;
+    left:33.4%;
+}
+
+#clientes10{
+    top: 5.2%;
+    left: 8.4%;
+}
+
+#clientes11{
+    top: 13.5%;
+    left: 20.2%;
+}
+
+#clientes12{
+    top: 25.6%;
+    left: 5.8%;
+}
+
+#clientes13{
+    top: 27.8%;
+    left: 17%;
+}
+
+
+
+
+
+
+
+
+#wrapper-final{
+    width: 6600px;
+	height:100vh;
+    display: inline-block;
+}
+
+#contacto{
+	height:100%;
+	width:100vw;
+    margin-right: 40vw;
+    position: relative;
+    display: inline-block;
+}
+
+#planetaverde{
+    width: auto;
+    height: 36%;
+    position: absolute;
+    top: -78%;
+    right: 8%;
+    z-index: 3;
+}
+
+#islacontacto{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    bottom: 8%;
+    left: 27%;
+    z-index: 3;
+}
+
+#pisofinal{
+    width: auto;
+    height: 40%;
+    position: absolute;
+    bottom: -8%;
+    left: -5%;
+    z-index: 1;
+}
+
+#arbol1{
+    width: auto;
+    height: 28%;
+    position: absolute;
+    bottom: 0%;
+    left: 1%;
+    z-index: 2;
+}
+
+#arbol2{
+    width: auto;
+    height: 40%;
+    position: absolute;
+    bottom: 0%;
+    left: 13%;
+    z-index: 2;
+}
+
+#arbol3{
+    width: auto;
+    height: 45%;
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    z-index: 2;
+}
+
+#arbol4{
+    width: auto;
+    height: 19%;
+    position: absolute;
+    bottom: 0%;
+    left: 9%;
+    z-index: 1;
+}
+
+#arbol5{
+    width: auto;
+    height: 17%;
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+    z-index: 1;
+}
+
+#arbol6{
+    width: auto;
+    height: 25%;
+    position: absolute;
+    bottom: 0%;
+    left: 26%;
+    z-index: 1;
+}
+
+#arbol7{
+    width: auto;
+    height: 30%;
+    position: absolute;
+    bottom: 0%;
+    right: 32.5%;
+    z-index: 1;
+}
+
+#arbol8{
+    width: auto;
+    height: 17%;
+    position: absolute;
+    bottom: 0%;
+    right: 27%;
+    z-index: 1;
+}
+
+#arbol9{
+    width: auto;
+    height: 30%;
+    position: absolute;
+    bottom: 0%;
+    right: 10%;
+    z-index: 1;
+}
+
+#arbol10{
+    width: auto;
+    height: 26%;
+    position: absolute;
+    bottom: 0%;
+    right: 19.5%;
+    z-index: 1;
+}
+
+#outro{
+	height:100%;
+	width:100vw;
+    position: relative; 
+    display: inline-block;
+}
+
+#castillofinal1{
+    width: auto;
+    height: 75%;
+    position: absolute;
+    bottom: -8%;
+    left: 6.5%;
+    z-index: 3;
+}
+
+#castillofinal2{
+    width: auto;
+    height: 40%;
+    position: absolute;
+    bottom: -8%;
+    right: 10%;
+    z-index: 2;
+}
+
+#castillofinal3{
+    width: auto;
+    height: 53%;
+    position: absolute;
+    bottom: -8%;
+    right: -3%;
+    z-index: 3;
+}
+
+#castillofinal4{
+    width: auto;
+    height: 58%;
+    position: absolute;
+    bottom: -8%;
+    left: -0.5%;
+    z-index: 2;
+}
+
+#castillofinal5{
+    width: auto;
+    height: 35%;
+    position: absolute;
+    bottom: -6%;
+    left: -11%;
+    z-index: 1;
+}
+
+#castillofinal6{
+    width: auto;
+    height: 60%;
+    position: absolute;
+    bottom: -6%;
+    left: -23.5%;
+    z-index: 2;
+}
+
+#castillofinal7{
+    width: auto;
+    height: 30%;
+    position: absolute;
+    bottom: -6%;
+    left: -36%;
+    z-index: 1;
+}
+
+#islaroja{
+    width: auto;
+    height: 70%;
+    position: absolute;
+    top: -38%;
+    left: -40%;
+    z-index: 1;
+}
+
+#outrovideo{
+    width: 100%;
+    height: 95%;
+    background-image:url(../images/salidaholder-17.png);
+    background-repeat: no-repeat;
+	background-size:auto 100%;
+    background-position: center;
+    z-index: 1;
+    position: absolute;
+    top: 6%;
+}
+

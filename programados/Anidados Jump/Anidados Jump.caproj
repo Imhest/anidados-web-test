@@ -1,0 +1,1606 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Anidados Jump</name>
+    <description>Jumper de Anidados</description>
+    <version>1.0.0.0</version>
+    <author>Knoska, Knoska, Paludetto, Paviotti</author>
+    <author-email>anidados@gmail.com</author-email>
+    <author-website>http://</author-website>
+    <app-id>com.anidados.anidadosjump</app-id>
+    <unique-id>27rccvhjm9aco</unique-id>
+    <saved-with-version>20600</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Browser" version="1">Browser</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Fade" version="1">Fade</behavior>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>720</width>
+        <height>1280</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Menu</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Chrome</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-folder name="0fondos">
+            <object-type name="Fondo1" sid="5372335835194157">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1283999589780613" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\fondo ciudad.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Fondo2" sid="2364246911403303">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1197964923397157" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\fondo avion 2.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Fondo3" sid="4082974419802259">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7950622774723439" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\fondo estrellas 3.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Fondo4" sid="9473659178889886">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8572052234931446" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\fondo planetas 4.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="1CIUDAD+obj">
+            <object-type name="1ciudad" sid="264299434191956">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="618862483096358" speed="5">
+                        <frame duration="1" hotspotX="0.47996" hotspotY="0.487395" original-source="D:\Anidados Jump\imagenes\ciudad pm .png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="2ciudad" sid="3631319950568178">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9722164926075271" speed="5">
+                        <frame duration="1" hotspotX="0.480025" hotspotY="0.686275" original-source="D:\Anidados Jump\imagenes\ciudad pp.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="3edif" sid="8792605906507818">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4970227505729809" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="1" original-source="D:\Anidados Jump\imagenes\ciudad pg.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="suelo" sid="6263754131160914">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Solid" sid="5542735464241339">
+                        <behavior id="solid" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7774052679257281" speed="5">
+                        <frame duration="1" hotspotX="0.492509" hotspotY="0.58371" original-source="D:\Anidados Jump\imagenes\suelo.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="nubes2" sid="2621463226537305">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9802940528990973" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.939277" original-source="D:\Anidados Jump\imagenes\nubes1.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="arboles" sid="5771526767442456">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9606329166134775" speed="5">
+                        <frame duration="1" hotspotX="0.505363" hotspotY="-4.9129" original-source="D:\Anidados Jump\imagenes\arboles.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Rama5" sid="5280336757217676">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Jumpthru" sid="785528016686965">
+                        <behavior id="jumpthru" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="8107448690706393">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9928676710015475" speed="5">
+                        <frame duration="1" hotspotX="0.998804" hotspotY="0.392105" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\rama5.png">
+                            <collision-poly>
+                                <point x="0" y="0.339474" />
+                                <point x="0.997608" y="0.373684" />
+                                <point x="1" y="0.389474" />
+                                <point x="0" y="0.352632" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="plataformainicio" sid="6275995211218791">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Jumpthru" sid="5429644263335107">
+                        <behavior id="jumpthru" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9660500625361864" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Rama1" sid="6090936126456869">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Jumpthru" sid="7207973724586338">
+                        <behavior id="jumpthru" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="2202731069527494">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2468194532239088" speed="5">
+                        <frame duration="1" hotspotX="-0.0021097" hotspotY="0.626374" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\rama1.png">
+                            <collision-poly>
+                                <point x="1" y="0.851649" />
+                                <point x="1" y="0.879121" />
+                                <point x="0.488397" y="0.509615" />
+                                <point x="0" y="0.626374" />
+                                <point x="0" y="0.604396" />
+                                <point x="0.487342" y="0.483517" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Rama2" sid="4749429992426786">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Jumpthru" sid="4051254330674917">
+                        <behavior id="jumpthru" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="150434619088982">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6898103393831762" speed="5">
+                        <frame duration="1" hotspotX="0.99723" hotspotY="0.909091" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\rama2.png">
+                            <collision-poly>
+                                <point x="1" y="0.834225" />
+                                <point x="1" y="0.877006" />
+                                <point x="0" y="0.727273" />
+                                <point x="0" y="0.700535" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Rama3" sid="2722947669721794">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Jumpthru" sid="7919179806248361">
+                        <behavior id="jumpthru" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="1715037025209301">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6498508691229666" speed="5">
+                        <frame duration="1" hotspotX="0" hotspotY="0.103093" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\rama3.png">
+                            <collision-poly>
+                                <point x="0" y="0.149485" />
+                                <point x="1" y="0.175258" />
+                                <point x="1" y="0.226804" />
+                                <point x="0" y="0.180412" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Rama6" sid="6508605345994979">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Jumpthru" sid="5015762167319501">
+                        <behavior id="jumpthru" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="5027495809456834">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2319252037752003" speed="5">
+                        <frame duration="1" hotspotX="0.968966" hotspotY="0.640288" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\rama6-01.png">
+                            <collision-poly>
+                                <point x="0.105172" y="0.0503597" />
+                                <point x="0.996552" y="0.776978" />
+                                <point x="1" y="0.841726" />
+                                <point x="0.0931035" y="0.0899281" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Rama7" sid="6103432644751097">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Jumpthru" sid="7638871573707806">
+                        <behavior id="jumpthru" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="3077567517637756">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5792089312657137" speed="5">
+                        <frame duration="1" hotspotX="0.740032" hotspotY="0.150602" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\rama7-01.png">
+                            <collision-poly>
+                                <point x="0" y="0.144578" />
+                                <point x="1" y="0.26506" />
+                                <point x="1" y="0.313253" />
+                                <point x="0" y="0.192771" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Rama8" sid="9867491385228525">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Jumpthru" sid="216769947164703">
+                        <behavior id="jumpthru" />
+                    </behavior-type>
+                    <behavior-type name="Sine" sid="5321878294272037">
+                        <behavior id="Sin" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1084665294370435" speed="5">
+                        <frame duration="1" hotspotX="0.861538" hotspotY="0.151961" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\rama8-01.png">
+                            <collision-poly>
+                                <point x="1" y="0.578431" />
+                                <point x="1" y="0.534315" />
+                                <point x="0" y="0.183823" />
+                                <point x="0" y="0.235293" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="00personajes">
+            <object-type name="Dani" sid="9920002559251859">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="ScrollTo" sid="8359426011303696">
+                        <behavior id="scrollto" />
+                    </behavior-type>
+                    <behavior-type name="BoundToLayout" sid="707472428170264">
+                        <behavior id="bound" />
+                    </behavior-type>
+                    <behavior-type name="Platform" sid="5072955340176209">
+                        <behavior id="Platform" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="9" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8720662564462004" speed="14">
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION DANI\1-01.png">
+                            <collision-poly>
+                                <point x="0.426095" y="0.708163" />
+                                <point x="0.57207" y="0.707905" />
+                                <point x="0.572263" y="0.925078" />
+                                <point x="0.426095" y="0.925078" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION DANI\1-02.png">
+                            <collision-poly>
+                                <point x="0.426095" y="0.708163" />
+                                <point x="0.57207" y="0.707905" />
+                                <point x="0.572263" y="0.925078" />
+                                <point x="0.426095" y="0.925078" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION DANI\1-03.png">
+                            <collision-poly>
+                                <point x="0.426095" y="0.708163" />
+                                <point x="0.57207" y="0.707905" />
+                                <point x="0.572263" y="0.925078" />
+                                <point x="0.426095" y="0.925078" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION DANI\1-04.png">
+                            <collision-poly>
+                                <point x="0.426095" y="0.708163" />
+                                <point x="0.57207" y="0.707905" />
+                                <point x="0.572263" y="0.925078" />
+                                <point x="0.426095" y="0.925078" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION DANI\1-05.png">
+                            <collision-poly>
+                                <point x="0.426095" y="0.708163" />
+                                <point x="0.57207" y="0.707905" />
+                                <point x="0.572263" y="0.925078" />
+                                <point x="0.426095" y="0.925078" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION DANI\1-06.png">
+                            <collision-poly>
+                                <point x="0.426095" y="0.708163" />
+                                <point x="0.57207" y="0.707905" />
+                                <point x="0.572263" y="0.925078" />
+                                <point x="0.426095" y="0.925078" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION DANI\1-07.png">
+                            <collision-poly>
+                                <point x="0.426095" y="0.708163" />
+                                <point x="0.57207" y="0.707905" />
+                                <point x="0.572263" y="0.925078" />
+                                <point x="0.426095" y="0.925078" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION DANI\1-08.png">
+                            <collision-poly>
+                                <point x="0.426095" y="0.708163" />
+                                <point x="0.57207" y="0.707905" />
+                                <point x="0.572263" y="0.925078" />
+                                <point x="0.426095" y="0.925078" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION DANI\1-09.png">
+                            <collision-poly>
+                                <point x="0.426095" y="0.708163" />
+                                <point x="0.57207" y="0.707905" />
+                                <point x="0.572263" y="0.925078" />
+                                <point x="0.426095" y="0.925078" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="10" loop="0" name="Lucas" pingpong="0" repeatcount="1" repeatto="0" sid="1147459883500315" speed="14">
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION LUCAS\1-10.png">
+                            <collision-poly>
+                                <point x="0.445421" y="0.672059" />
+                                <point x="0.588382" y="0.674318" />
+                                <point x="0.589169" y="0.898023" />
+                                <point x="0.444633" y="0.898023" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION LUCAS\1-11.png">
+                            <collision-poly>
+                                <point x="0.445421" y="0.672059" />
+                                <point x="0.588382" y="0.674318" />
+                                <point x="0.589169" y="0.898023" />
+                                <point x="0.444633" y="0.898023" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION LUCAS\1-12.png">
+                            <collision-poly>
+                                <point x="0.445421" y="0.672059" />
+                                <point x="0.588382" y="0.674318" />
+                                <point x="0.589169" y="0.898023" />
+                                <point x="0.444633" y="0.898023" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION LUCAS\1-13.png">
+                            <collision-poly>
+                                <point x="0.445421" y="0.672059" />
+                                <point x="0.588382" y="0.674318" />
+                                <point x="0.589169" y="0.898023" />
+                                <point x="0.444633" y="0.898023" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION LUCAS\1-14.png">
+                            <collision-poly>
+                                <point x="0.445421" y="0.672059" />
+                                <point x="0.588382" y="0.674318" />
+                                <point x="0.589169" y="0.898023" />
+                                <point x="0.444633" y="0.898023" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION LUCAS\1-15.png">
+                            <collision-poly>
+                                <point x="0.445421" y="0.672059" />
+                                <point x="0.588382" y="0.674318" />
+                                <point x="0.589169" y="0.898023" />
+                                <point x="0.444633" y="0.898023" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION LUCAS\1-16.png">
+                            <collision-poly>
+                                <point x="0.445421" y="0.672059" />
+                                <point x="0.588382" y="0.674318" />
+                                <point x="0.589169" y="0.898023" />
+                                <point x="0.444633" y="0.898023" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION LUCAS\1-17.png">
+                            <collision-poly>
+                                <point x="0.445421" y="0.672059" />
+                                <point x="0.588382" y="0.674318" />
+                                <point x="0.589169" y="0.898023" />
+                                <point x="0.444633" y="0.898023" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION LUCAS\1-18.png">
+                            <collision-poly>
+                                <point x="0.445421" y="0.672059" />
+                                <point x="0.588382" y="0.674318" />
+                                <point x="0.589169" y="0.898023" />
+                                <point x="0.444633" y="0.898023" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION LUCAS\1-19.png">
+                            <collision-poly>
+                                <point x="0.445421" y="0.672059" />
+                                <point x="0.588382" y="0.674318" />
+                                <point x="0.589169" y="0.898023" />
+                                <point x="0.444633" y="0.898023" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="10" loop="0" name="Carla" pingpong="0" repeatcount="1" repeatto="0" sid="8956815888900812" speed="14">
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIDADOS CARLA\1-20.png">
+                            <collision-poly>
+                                <point x="0.434014" y="0.677991" />
+                                <point x="0.590443" y="0.677991" />
+                                <point x="0.590443" y="0.894901" />
+                                <point x="0.434014" y="0.895942" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIDADOS CARLA\1-21.png">
+                            <collision-poly>
+                                <point x="0.434014" y="0.677991" />
+                                <point x="0.590443" y="0.677991" />
+                                <point x="0.590443" y="0.894901" />
+                                <point x="0.434014" y="0.895942" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIDADOS CARLA\1-22.png">
+                            <collision-poly>
+                                <point x="0.434014" y="0.677991" />
+                                <point x="0.590443" y="0.677991" />
+                                <point x="0.590443" y="0.894901" />
+                                <point x="0.434014" y="0.895942" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIDADOS CARLA\1-23.png">
+                            <collision-poly>
+                                <point x="0.434014" y="0.677991" />
+                                <point x="0.590443" y="0.677991" />
+                                <point x="0.590443" y="0.894901" />
+                                <point x="0.434014" y="0.895942" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIDADOS CARLA\1-24.png">
+                            <collision-poly>
+                                <point x="0.434014" y="0.677991" />
+                                <point x="0.590443" y="0.677991" />
+                                <point x="0.590443" y="0.894901" />
+                                <point x="0.434014" y="0.895942" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIDADOS CARLA\1-25.png">
+                            <collision-poly>
+                                <point x="0.434014" y="0.677991" />
+                                <point x="0.590443" y="0.677991" />
+                                <point x="0.590443" y="0.894901" />
+                                <point x="0.434014" y="0.895942" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIDADOS CARLA\1-26.png">
+                            <collision-poly>
+                                <point x="0.434014" y="0.677991" />
+                                <point x="0.590443" y="0.677991" />
+                                <point x="0.590443" y="0.894901" />
+                                <point x="0.434014" y="0.895942" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIDADOS CARLA\1-27.png">
+                            <collision-poly>
+                                <point x="0.434014" y="0.677991" />
+                                <point x="0.590443" y="0.677991" />
+                                <point x="0.590443" y="0.894901" />
+                                <point x="0.434014" y="0.895942" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIDADOS CARLA\1-28.png">
+                            <collision-poly>
+                                <point x="0.434014" y="0.677991" />
+                                <point x="0.590443" y="0.677991" />
+                                <point x="0.590443" y="0.894901" />
+                                <point x="0.434014" y="0.895942" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIDADOS CARLA\1-29.png">
+                            <collision-poly>
+                                <point x="0.434014" y="0.677991" />
+                                <point x="0.590443" y="0.677991" />
+                                <point x="0.590443" y="0.894901" />
+                                <point x="0.434014" y="0.895942" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="10" loop="0" name="Ivo" pingpong="0" repeatcount="1" repeatto="0" sid="5604554902480809" speed="14">
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION IVAN\1-30.png">
+                            <collision-poly>
+                                <point x="0.436033" y="0.660173" />
+                                <point x="0.578552" y="0.660173" />
+                                <point x="0.578905" y="0.89282" />
+                                <point x="0.434992" y="0.89282" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION IVAN\1-31.png">
+                            <collision-poly>
+                                <point x="0.436033" y="0.660173" />
+                                <point x="0.578552" y="0.660173" />
+                                <point x="0.578905" y="0.89282" />
+                                <point x="0.434992" y="0.89282" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION IVAN\1-32.png">
+                            <collision-poly>
+                                <point x="0.436033" y="0.660173" />
+                                <point x="0.578552" y="0.660173" />
+                                <point x="0.578905" y="0.89282" />
+                                <point x="0.434992" y="0.89282" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION IVAN\1-33.png">
+                            <collision-poly>
+                                <point x="0.436033" y="0.660173" />
+                                <point x="0.578552" y="0.660173" />
+                                <point x="0.578905" y="0.89282" />
+                                <point x="0.434992" y="0.89282" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION IVAN\1-34.png">
+                            <collision-poly>
+                                <point x="0.436033" y="0.660173" />
+                                <point x="0.578552" y="0.660173" />
+                                <point x="0.578905" y="0.89282" />
+                                <point x="0.434992" y="0.89282" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION IVAN\1-35.png">
+                            <collision-poly>
+                                <point x="0.436033" y="0.660173" />
+                                <point x="0.578552" y="0.660173" />
+                                <point x="0.578905" y="0.89282" />
+                                <point x="0.434992" y="0.89282" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION IVAN\1-36.png">
+                            <collision-poly>
+                                <point x="0.436033" y="0.660173" />
+                                <point x="0.578552" y="0.660173" />
+                                <point x="0.578905" y="0.89282" />
+                                <point x="0.434992" y="0.89282" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION IVAN\1-37.png">
+                            <collision-poly>
+                                <point x="0.436033" y="0.660173" />
+                                <point x="0.578552" y="0.660173" />
+                                <point x="0.578905" y="0.89282" />
+                                <point x="0.434992" y="0.89282" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION IVAN\1-38.png">
+                            <collision-poly>
+                                <point x="0.436033" y="0.660173" />
+                                <point x="0.578552" y="0.660173" />
+                                <point x="0.578905" y="0.89282" />
+                                <point x="0.434992" y="0.89282" />
+                            </collision-poly>
+                        </frame>
+                        <frame duration="1" hotspotX="0.504683" hotspotY="0.0884495" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nuevo\ANIMACION IVAN\1-39.png">
+                            <collision-poly>
+                                <point x="0.436033" y="0.660173" />
+                                <point x="0.578552" y="0.660173" />
+                                <point x="0.578905" y="0.89282" />
+                                <point x="0.434992" y="0.89282" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="2 CIELO+obj">
+            <object-type name="nubes" sid="9461849772772333">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9777370944473474" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.414096" original-source="D:\Anidados Jump\imagenes\nubes.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="2Planeador" sid="9857475462904798">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8229311817752727" speed="5">
+                        <frame duration="1" hotspotX="0.047619" hotspotY="-3.06818" original-source="D:\Anidados Jump\imagenes\2 planeador.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="2helicoptero" sid="5512852481639489">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9044760561968546" speed="5">
+                        <frame duration="1" hotspotX="0.716178" hotspotY="-1.63216" original-source="D:\Anidados Jump\imagenes\2helicoptero.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="2Avion" sid="1703848590091645">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7893546550827099" speed="5">
+                        <frame duration="1" hotspotX="0.438456" hotspotY="0.633489" original-source="D:\Anidados Jump\imagenes\2 avion.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="2jet" sid="46117261831558">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9336744279812077" speed="5">
+                        <frame duration="1" hotspotX="0.433121" hotspotY="7.22426" original-source="D:\Anidados Jump\imagenes\2jet.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="2AvP" sid="5524864294627516">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1320671088947518" speed="5">
+                        <frame duration="1" hotspotX="-0.0644531" hotspotY="-13.6348" original-source="D:\Anidados Jump\imagenes\2 av p.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="2avP2" sid="881239337498842">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7722068522487019" speed="5">
+                        <frame duration="1" hotspotX="0.851158" hotspotY="4.99744" original-source="D:\Anidados Jump\imagenes\2av p 1.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="3 ESPACIO+obj">
+            <object-type name="avionCar" sid="1360549290249823">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7232241942866173" speed="5">
+                        <frame duration="1" hotspotX="0.249246" hotspotY="-2.82317" original-source="D:\Anidados Jump\imagenes\avion car.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="estrellas" sid="772583868047979">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3472882921716628" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Anidados Jump\imagenes\estrellas.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="estrellasT" sid="4479342795403545">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="10" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2194938358628714" speed="5">
+                        <frame duration="1" hotspotX="0.478754" hotspotY="0.485415" />
+                        <frame duration="1" hotspotX="0.478754" hotspotY="0.485415" original-source="D:\Anidados Jump\imagenes\estrellas t 2.png" />
+                        <frame duration="1" hotspotX="0.478754" hotspotY="0.485415" />
+                        <frame duration="1" hotspotX="0.478754" hotspotY="0.485415" />
+                        <frame duration="1" hotspotX="0.478846" hotspotY="0.485415" />
+                        <frame duration="1" hotspotX="0.478846" hotspotY="0.485415" />
+                        <frame duration="1" hotspotX="0.478846" hotspotY="0.485415" />
+                        <frame duration="1" hotspotX="0.478754" hotspotY="0.485415" />
+                        <frame duration="1" hotspotX="0.478754" hotspotY="0.485415" />
+                        <frame duration="1" hotspotX="0.478754" hotspotY="0.485415" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="4 PLANETAS">
+            <object-type name="4Estrellas" sid="9972761793581127">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6233135142966108" speed="5">
+                        <frame duration="1" hotspotX="0.517442" hotspotY="0.367386" original-source="D:\Anidados Jump\imagenes\4 estrellas .png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="estrellasYPlanetas" sid="1259882400316198">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1080074343814079" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\Estrellas y planetas.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.5" y="0" />
+                                <point x="0.811875" y="0.0410641" />
+                                <point x="0.493125" y="0.5" />
+                                <point x="0.964375" y="0.992224" />
+                                <point x="0.5" y="0.594679" />
+                                <point x="0.15625" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Enemigos">
+            <object-type name="generador1" sid="9819245637912368">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6908549210776178" speed="5">
+                        <frame duration="1" hotspotX="0.988" hotspotY="0.488" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Enemigo" sid="6437810571781946">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="3768545395074823">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="6498724200508376">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2581742393753649" speed="5">
+                        <frame duration="1" hotspotX="0.980392" hotspotY="0.398058" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\cohete-01.png">
+                            <collision-poly>
+                                <point x="0.153298" y="0.300971" />
+                                <point x="0.966132" y="0.291262" />
+                                <point x="0.959002" y="0.524272" />
+                                <point x="0.156863" y="0.621359" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="generador2" sid="1936108215127652">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="385222114672093" speed="5">
+                        <frame duration="1" hotspotX="0.988" hotspotY="0.488" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Enemigo2" sid="6548334826224153">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="6744616979299531">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="8233575112973928">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5593233928331305" speed="5">
+                        <frame duration="1" hotspotX="0.980392" hotspotY="0.398058" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\cohete-01.png">
+                            <collision-poly>
+                                <point x="0.153298" y="0.300971" />
+                                <point x="0.966132" y="0.291262" />
+                                <point x="0.959002" y="0.524272" />
+                                <point x="0.156863" y="0.621359" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="generador3" sid="7712790326466345">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1818204520452453" speed="5">
+                        <frame duration="1" hotspotX="0.988" hotspotY="0.488" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Enemigo3" sid="5060610738311141">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="5158516219329527">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="2088815400580456">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2651203103870429" speed="5">
+                        <frame duration="1" hotspotX="0.496413" hotspotY="0.481579" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nube-01.png">
+                            <collision-poly>
+                                <point x="0.783358" y="0.0842105" />
+                                <point x="0.929699" y="0.978947" />
+                                <point x="0.0774748" y="0.989474" />
+                                <point x="0.202296" y="0.081579" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Enemigo4" sid="3766258633969525">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="5322116974286878">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="8316728566652039">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6024968057951583" speed="5">
+                        <frame duration="1" hotspotX="0.500978" hotspotY="0.501618" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\meteorito-02.png">
+                            <collision-poly>
+                                <point x="0.322896" y="0.110032" />
+                                <point x="0.972603" y="0.498382" />
+                                <point x="0.845401" y="0.951456" />
+                                <point x="0.144814" y="0.443366" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Enemigo5" sid="4575116994729913">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="9366388439846538">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="1408457072784804">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6298389599955441" speed="5">
+                        <frame duration="1" hotspotX="0.509766" hotspotY="0.475728" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\meteorito-01-01.png">
+                            <collision-poly>
+                                <point x="0.308594" y="0.902913" />
+                                <point x="0.171875" y="0.588996" />
+                                <point x="0.78125" y="0.0323624" />
+                                <point x="0.980469" y="0.475728" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Enemigo6" sid="8884620183793884">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="4103487632323186">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="3507353551090727">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9718631080942352" speed="5">
+                        <frame duration="1" hotspotX="0.501779" hotspotY="0.515106" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\ovni-01.png">
+                            <collision-poly>
+                                <point x="0.462633" y="0.0151057" />
+                                <point x="0.704627" y="0.166163" />
+                                <point x="0.932384" y="0.933535" />
+                                <point x="0.427046" y="0.971299" />
+                                <point x="0.069395" y="0.44713" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Enemigo8" sid="1080571080952496">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="1042414648925962">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="4918282704479385">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9950769375925425" speed="5">
+                        <frame duration="1" hotspotX="0.5" hotspotY="0.499241" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\ovni.png">
+                            <collision-poly>
+                                <point x="0.703209" y="0.834598" />
+                                <point x="0.510695" y="1" />
+                                <point x="0.0445633" y="0.561457" />
+                                <point x="0.414439" y="0.0242793" />
+                                <point x="0.92246" y="0.0773898" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Enemigo7" sid="5007328325580141">
+                <plugin id="Sprite" />
+                <behaviors>
+                    <behavior-type name="Bullet" sid="7164293357201682">
+                        <behavior id="Bullet" />
+                    </behavior-type>
+                    <behavior-type name="DestroyOutsideLayout" sid="6789236767696924">
+                        <behavior id="destroy" />
+                    </behavior-type>
+                </behaviors>
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8754967584226633" speed="5">
+                        <frame duration="1" hotspotX="0.503587" hotspotY="0.518421" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\nube-01.png">
+                            <collision-poly>
+                                <point x="0.216642" y="0.915789" />
+                                <point x="0.070301" y="0.021053" />
+                                <point x="0.922525" y="0.010526" />
+                                <point x="0.797704" y="0.918421" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="generador4" sid="8611858714973416">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3189944919768096" speed="5">
+                        <frame duration="1" hotspotX="0.988" hotspotY="0.488" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="generador5" sid="8659274249183007">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7121363922312186" speed="5">
+                        <frame duration="1" hotspotX="0.988" hotspotY="0.488" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="generador6" sid="573252484563292">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5721659061759529" speed="5">
+                        <frame duration="1" hotspotX="0.988" hotspotY="0.488" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="generador7" sid="9525303646587933">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4298930330183596" speed="5">
+                        <frame duration="1" hotspotX="0.988" hotspotY="0.488" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="generador8" sid="3210825858009163">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6638671470170005" speed="5">
+                        <frame duration="1" hotspotX="0.988" hotspotY="0.488" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+        </object-folder>
+        <object-folder name="Layout2">
+            <object-type name="Logo" sid="7946349069421679">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1911427600654855" speed="5">
+                        <frame duration="1" hotspotX="0.500528" hotspotY="0.5" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\logoanidados.png">
+                            <collision-poly>
+                                <point x="0.197466" y="0.556548" />
+                                <point x="0.499472" y="0.0297619" />
+                                <point x="0.813094" y="0.526786" />
+                                <point x="0.731785" y="0.5" />
+                                <point x="0.946146" y="0.848214" />
+                                <point x="0.499472" y="0.988095" />
+                                <point x="0.0200634" y="0.943452" />
+                                <point x="0.0908131" y="0.5" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="DecoracionLayout2" sid="5629009002798226">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2097665004931373" speed="5">
+                        <frame duration="1" hotspotX="0.500249" hotspotY="0.5" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\banner2.jpg" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Text" sid="7671851792901366">
+                <plugin id="Text" />
+            </object-type>
+            <object-type name="Boton" sid="644577900422531">
+                <plugin id="Sprite" />
+                <animation-folder>
+                    <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8674488164527221" speed="5">
+                        <frame duration="1" hotspotX="0.485075" hotspotY="0.490196" original-source="E:\Anidados\Anidados Jump\imagenes\botones.png">
+                            <collision-poly>
+                                <point x="0.0373134" y="0" />
+                                <point x="1" y="0" />
+                                <point x="1" y="0.892157" />
+                                <point x="0.0373134" y="0.901961" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="hover" pingpong="0" repeatcount="1" repeatto="0" sid="9239080954853085" speed="5">
+                        <frame duration="1" hotspotX="0.485075" hotspotY="0.490196" original-source="E:\Anidados\Anidados Jump\imagenes\botones.png">
+                            <collision-poly>
+                                <point x="0" y="0" />
+                                <point x="0.973881" y="0" />
+                                <point x="0.970149" y="0.892157" />
+                                <point x="0" y="0.901961" />
+                            </collision-poly>
+                        </frame>
+                    </animation>
+                    <animation framecount="1" loop="0" name="click" pingpong="0" repeatcount="1" repeatto="0" sid="3184074238494005" speed="5">
+                        <frame duration="1" hotspotX="0.503778" hotspotY="0.490196" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\boton volver-01.png" />
+                    </animation>
+                </animation-folder>
+            </object-type>
+            <object-type name="Mouse" sid="5154911390846367">
+                <plugin id="Mouse" />
+            </object-type>
+        </object-folder>
+        <object-type name="finallvl" sid="3165922191236489">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="checkpoint" sid="2756531207137905" type="boolean" />
+                <instance-variable name="numero" sid="9687064711900072" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8896987225779354" speed="5">
+                    <frame duration="1" hotspotX="0.476" hotspotY="-0.052" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="finallvl2" sid="3969873523915024">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6031071872649512" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="finallvl3" sid="7023533295104239">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2278580757551921" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="finallvl4" sid="1013326542022976">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9424043030726565" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="logoani" sid="8179323860957892">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6225075177379143" speed="5">
+                    <frame duration="1" hotspotX="0.500528" hotspotY="0.5" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\logoanidados.png">
+                        <collision-poly>
+                            <point x="0.197466" y="0.556548" />
+                            <point x="0.499472" y="0.0297619" />
+                            <point x="0.813094" y="0.526786" />
+                            <point x="0.731785" y="0.5" />
+                            <point x="0.946146" y="0.848214" />
+                            <point x="0.499472" y="0.988095" />
+                            <point x="0.0200634" y="0.943452" />
+                            <point x="0.0908131" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fondomenu" sid="7171190400053031">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5186728871390643" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501089" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\banner4-01.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botonjugar" sid="1901261049960072">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9460558305638952" speed="5">
+                    <frame duration="1" hotspotX="0.485075" hotspotY="0.485437" original-source="E:\Anidados\Anidados Jump\imagenes\botones.png">
+                        <collision-poly>
+                            <point x="0.0373134" y="0.0970874" />
+                            <point x="1" y="0.0970874" />
+                            <point x="1" y="1" />
+                            <point x="0.0373134" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="hover" pingpong="0" repeatcount="1" repeatto="0" sid="9619549506291023" speed="5">
+                    <frame duration="1" hotspotX="0.485075" hotspotY="0.485437" original-source="E:\Anidados\Anidados Jump\imagenes\botones.png">
+                        <collision-poly>
+                            <point x="0" y="0.0970874" />
+                            <point x="0.962687" y="0.0970874" />
+                            <point x="0.958955" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botoninstrucciones" sid="586304071216595">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7620942650820681" speed="5">
+                    <frame duration="1" hotspotX="0.485075" hotspotY="0.490196" original-source="E:\Anidados\Anidados Jump\imagenes\botones.png">
+                        <collision-poly>
+                            <point x="0.00373134" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.00373134" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="hover" pingpong="0" repeatcount="1" repeatto="0" sid="893616124338623" speed="5">
+                    <frame duration="1" hotspotX="0.485075" hotspotY="0.490196" original-source="E:\Anidados\Anidados Jump\imagenes\botones.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.973881" y="0" />
+                            <point x="0.970149" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="aviondepapel" sid="4729630221649485">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8805697860174011" speed="5">
+                    <frame duration="1" hotspotX="0.496094" hotspotY="0.434783" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\2 av p.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="6437666944106323">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8530872903368294" speed="5">
+                    <frame duration="1" hotspotX="0.500364" hotspotY="0.457845" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\2 avion.png">
+                        <collision-poly>
+                            <point x="0.438456" y="0.112412" />
+                            <point x="0.589949" y="0.633489" />
+                            <point x="0.438456" y="0.949648" />
+                            <point x="0.444283" y="0.633489" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="767282203906345">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="871730700808046" speed="5">
+                    <frame duration="1" hotspotX="0.510025" hotspotY="0.530844" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\2 planeador.png">
+                        <collision-poly>
+                            <point x="0.047619" y="0.657468" />
+                            <point x="0.047619" y="0.761364" />
+                            <point x="0.622807" y="0.837662" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="5147019904245223">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7677431473089507" speed="5">
+                    <frame duration="1" hotspotX="0.430464" hotspotY="0.63586" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\2helicoptero.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="8354289491441333">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7677592397207906" speed="5">
+                    <frame duration="1" hotspotX="0.524416" hotspotY="0.583524" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\2jet.png">
+                        <collision-poly>
+                            <point x="0.313517" y="0.281465" />
+                            <point x="0.552725" y="0.281465" />
+                            <point x="0.433121" y="0.899314" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="titulo" sid="6159898289747917">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3025362624316002" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Anidados\INICIO-01.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Browser" sid="4683291857024852">
+            <plugin id="Browser" />
+        </object-type>
+        <object-type name="Monedas" sid="9355742119754295">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="32" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6037443874662324" speed="31">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Anidados\Anidados Jump\monedas\moneda-01.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Anidados\Anidados Jump\monedas\moneda-02.png" />
+                    <frame duration="1" hotspotX="0.502488" hotspotY="0.5" original-source="E:\Anidados\Anidados Jump\monedas\moneda-03.png" />
+                    <frame duration="1" hotspotX="0.502488" hotspotY="0.5" original-source="E:\Anidados\Anidados Jump\monedas\moneda-04.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Anidados\Anidados Jump\monedas\moneda-05.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Anidados\Anidados Jump\monedas\moneda-06.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Anidados\Anidados Jump\monedas\moneda-07.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Anidados\Anidados Jump\monedas\moneda-08.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Anidados\Anidados Jump\monedas\moneda-09.png" />
+                    <frame duration="1" hotspotX="0.502488" hotspotY="0.5" original-source="E:\Anidados\Anidados Jump\monedas\moneda-10.png" />
+                    <frame duration="1" hotspotX="0.502488" hotspotY="0.5" original-source="E:\Anidados\Anidados Jump\monedas\moneda-11.png" />
+                    <frame duration="1" hotspotX="0.502488" hotspotY="0.5" original-source="E:\Anidados\Anidados Jump\monedas\moneda-12.png" />
+                    <frame duration="1" hotspotX="0.502488" hotspotY="0.5" original-source="E:\Anidados\Anidados Jump\monedas\moneda-13.png" />
+                    <frame duration="1" hotspotX="0.502488" hotspotY="0.5" original-source="E:\Anidados\Anidados Jump\monedas\moneda-14.png" />
+                    <frame duration="1" hotspotX="0.502488" hotspotY="0.5" original-source="E:\Anidados\Anidados Jump\monedas\moneda-15.png" />
+                    <frame duration="1" hotspotX="0.502488" hotspotY="0.5" original-source="E:\Anidados\Anidados Jump\monedas\moneda-16.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502488" original-source="E:\Anidados\Anidados Jump\monedas\moneda-17.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502488" original-source="E:\Anidados\Anidados Jump\monedas\moneda-18.png" />
+                    <frame duration="1" hotspotX="0.502488" hotspotY="0.502488" original-source="E:\Anidados\Anidados Jump\monedas\moneda-19.png" />
+                    <frame duration="1" hotspotX="0.502488" hotspotY="0.502488" original-source="E:\Anidados\Anidados Jump\monedas\moneda-20.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502488" original-source="E:\Anidados\Anidados Jump\monedas\moneda-21.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502488" original-source="E:\Anidados\Anidados Jump\monedas\moneda-22.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502488" original-source="E:\Anidados\Anidados Jump\monedas\moneda-23.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502488" original-source="E:\Anidados\Anidados Jump\monedas\moneda-24.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502488" original-source="E:\Anidados\Anidados Jump\monedas\moneda-25.png" />
+                    <frame duration="1" hotspotX="0.502488" hotspotY="0.502488" original-source="E:\Anidados\Anidados Jump\monedas\moneda-26.png" />
+                    <frame duration="1" hotspotX="0.502488" hotspotY="0.502488" original-source="E:\Anidados\Anidados Jump\monedas\moneda-27.png" />
+                    <frame duration="1" hotspotX="0.502488" hotspotY="0.502488" original-source="E:\Anidados\Anidados Jump\monedas\moneda-28.png" />
+                    <frame duration="1" hotspotX="0.502488" hotspotY="0.502488" original-source="E:\Anidados\Anidados Jump\monedas\moneda-29.png" />
+                    <frame duration="1" hotspotX="0.502488" hotspotY="0.502488" original-source="E:\Anidados\Anidados Jump\monedas\moneda-30.png" />
+                    <frame duration="1" hotspotX="0.502488" hotspotY="0.502488" original-source="E:\Anidados\Anidados Jump\monedas\moneda-31.png" />
+                    <frame duration="1" hotspotX="0.502488" hotspotY="0.502488" original-source="E:\Anidados\Anidados Jump\monedas\moneda-32.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="puntosTexto" sid="2074200024406163">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite8" sid="7860103247857414">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9469606537615369" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text2" sid="8864091801518045">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite9" sid="6539789568402677">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="51361180559095">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9852262861140924" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="botonnosotros" sid="8996112908351526">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6079976486080283" speed="5">
+                    <frame duration="1" hotspotX="0.485075" hotspotY="0.485437" original-source="E:\Anidados\Anidados Jump\imagenes\botones.png">
+                        <collision-poly>
+                            <point x="0.0373134" y="0" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.0373134" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="hover" pingpong="0" repeatcount="1" repeatto="0" sid="1570485126868039" speed="5">
+                    <frame duration="1" hotspotX="0.485075" hotspotY="0.490196" original-source="E:\Anidados\Anidados Jump\imagenes\botones.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.981343" y="0" />
+                            <point x="0.977612" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fondonosotros" sid="9876132218674992">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7745889515296781" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Anidados\NOSOTROS-01-01.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite10" sid="7527600859614235">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Fade" sid="1256233662568198">
+                    <behavior id="Fade" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3034778937427476" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Anidados\anidando.jpg">
+                        <collision-poly>
+                            <point x="0" y="0.258594" />
+                            <point x="1" y="0.258594" />
+                            <point x="1" y="0.741406" />
+                            <point x="0" y="0.741406" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="personajesJuntos" sid="3183921633854813">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="135238532658446" speed="5">
+                    <frame duration="1" hotspotX="0.770087" hotspotY="0.501085" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\banner4-01.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="titulo2" sid="4777010168176905">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9689681504663905" speed="5">
+                    <frame duration="1" hotspotX="2.4303" hotspotY="0.385321" original-source="E:\Anidados\INICIO-01.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="7933452619848853">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4865556517081589" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\Instrucciones-01.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="921973345009093">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5162996782416631" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Paviotti\Desktop\Everything\Archivos pendrive\6to Cuatrimestre\Anidados\Anidados Jump\imagenes\Final-01.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fondonosotros2" sid="15306752168268">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8339313880766894" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Anidados\NOSOTROS-01-01.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="fondonosotros3" sid="2144438672345432">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9641142323148826" speed="5">
+                    <frame duration="1" hotspotX="0.451429" hotspotY="0.667488" original-source="E:\Anidados\NOSOTROS-01-01.jpg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FlechaIzquierda" sid="7872124462458115">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5043613357971068" speed="5">
+                    <frame duration="1" hotspotX="0.485075" hotspotY="0.496269" original-source="E:\Anidados\Anidados Jump\imagenes\botones.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="hover" pingpong="0" repeatcount="1" repeatto="0" sid="4132098522637644" speed="5">
+                    <frame duration="1" hotspotX="0.485075" hotspotY="0.490196" original-source="E:\Anidados\Anidados Jump\imagenes\botones.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.981343" y="0" />
+                            <point x="0.977612" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="FlechaDerecha" sid="2991991963241056">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="498690320389805" speed="5">
+                    <frame duration="1" hotspotX="0.485075" hotspotY="0.496269" original-source="E:\Anidados\Anidados Jump\imagenes\botones.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="hover" pingpong="0" repeatcount="1" repeatto="0" sid="3534840981171579" speed="5">
+                    <frame duration="1" hotspotX="0.485075" hotspotY="0.490196" original-source="E:\Anidados\Anidados Jump\imagenes\botones.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.981343" y="0" />
+                            <point x="0.977612" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="2515965424927314">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="close" sid="2447850686152499">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4838865601485148" speed="5">
+                    <frame duration="1" hotspotX="0.485075" hotspotY="0.496269" original-source="E:\Anidados\Anidados Jump\imagenes\botones.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="hover" pingpong="0" repeatcount="1" repeatto="0" sid="2238072666959981" speed="5">
+                    <frame duration="1" hotspotX="0.485075" hotspotY="0.490196" original-source="E:\Anidados\Anidados Jump\imagenes\botones.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.981343" y="0" />
+                            <point x="0.977612" y="1" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="6990667594105215">
+            <plugin id="Touch" />
+        </object-type>
+    </object-folder>
+    <families>
+        <family name="Ramasfamilia" plugin-id="Sprite" sid="5414120032737018">
+            <members>
+                <member>Rama1</member>
+                <member>Rama2</member>
+                <member>Rama3</member>
+                <member>Rama5</member>
+                <member>Rama6</member>
+                <member>Rama7</member>
+                <member>Rama8</member>
+            </members>
+            <behaviors>
+                <behavior-type name="Sine2" sid="9227679550689553">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+        </family>
+        <family name="Enemigos" plugin-id="Sprite" sid="5429547412862301">
+            <members>
+                <member>Enemigo3</member>
+                <member>Enemigo7</member>
+            </members>
+        </family>
+        <family name="Enemigos2" plugin-id="Sprite" sid="772783574339973">
+            <members>
+                <member>Enemigo</member>
+                <member>Enemigo2</member>
+            </members>
+        </family>
+        <family name="Enemigos3" plugin-id="Sprite" sid="6043427827070806">
+            <members>
+                <member>Enemigo4</member>
+                <member>Enemigo5</member>
+            </members>
+        </family>
+        <family name="Enemigos4" plugin-id="Sprite" sid="9234839536307045">
+            <members>
+                <member>Enemigo6</member>
+                <member>Enemigo8</member>
+            </members>
+        </family>
+    </families>
+    <layout-folder>
+        <layout>Menu.xml</layout>
+        <layout>Juego.xml</layout>
+        <layout>Final.xml</layout>
+        <layout>Instrucciones.xml</layout>
+        <layout>Nosotros.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Personajes.xml</event-sheet>
+        <event-sheet>Plataformas.xml</event-sheet>
+        <event-sheet>Enemigos.xml</event-sheet>
+        <event-sheet>Eventos Final.xml</event-sheet>
+        <event-sheet>Menuevents.xml</event-sheet>
+        <event-sheet>Instrucevents.xml</event-sheet>
+        <event-sheet>Eventos Nosotros.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="118" />
+        <global-instance type="Browser" uid="142" />
+        <global-instance type="Audio" uid="307">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+        <global-instance type="Touch" uid="306">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder>
+        <file name="fondoamigo.ogg" />
+        <file name="moneda2.m4a" />
+        <file name="moneda2.ogg" />
+    </sounds-folder>
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
